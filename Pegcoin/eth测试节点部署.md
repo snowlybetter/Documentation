@@ -22,5 +22,5 @@ geth --testnet --syncmode "full" --cache=512 --datadir "/data/ethereum/block_dat
 - 向bos映射的地址转账：eth.sendTransaction({from:"0xee46af1d0720a9d413d4c1e0af2078e3b2de6462", to:"0xa801aeb41cc4bb0ad9451238653be26a1827d170", value:web3.toWei(0.00100000, "ether")})
 - 查看地址的余额：eth.getBalance("0xee46af1d0720a9d413d4c1e0af2078e3b2de6462”)
 - 转账以后可以通过ropsten测试网浏览器，查看交易的确认情况：https://ropsten.etherscan.io
-说明
-	eth测试网申请的测试币数目有限且申请次数有限制，所以需要谨慎使用
+
+*说明:eth测试网申请的测试币数目有限且申请次数有限制，所以需要谨慎使用*

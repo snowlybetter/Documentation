@@ -1,15 +1,36 @@
-# BOSCore
+BOSCore
+------
 
-## BOSCore Technical White Paper
+### BOSCore Technical White Paper
+* [English](BOSCoreTechnicalWhitePaper.md)
+* [中文](BOSCoreTechnicalWhitePaper_zh.md) 
 
-- [English](BOSCoreTechnicalWhitePaper.md)
-- [中文](zh-CN/BOSCoreTechnicalWhitePaper.md) 
+### BET docs
+* [BET DPOS Borda Count Voting Plan](BET/BET_DPOS_Borda_Count_Voting_Plan.md)  
+* [BET DPOS波达计数法投票方案](BET/BET_DPOS波达计数法投票方案.md)  
 
+### IBC docs
+* [IBC Principles_and_Design](IBC/EOSIO_IBC_Priciple_and_Design.md)  
+* [IBC原理及设计](IBC/EOSIO_IBC_Priciple_and_Design_zh.md)  
+For more documentations, please refer to [docs](https://github.com/boscore/ibc_contracts/tree/master/docs)
 
+### BOS Batch-PBFT / LIB Acceleration Solution docs
+* [Algorithm for improving EOSIO consensus speed based on Batch-PBFT](LIB/Algorithm_for_improving_EOSIO_consensus_speed_based_on_Batch-PBFT.md)
+* [BOS LIB Acceleration Solution: Batch PBFT](LIB/BOS_Batch_PBFT_I.md)
+* [BOS Batch-PBFT Upgrade Solution](LIB/BOS_Batch_PBFT_II.md)
+* [基于PBFT提升EOSIO共识速度的算法](LIB/基于PBFT提升EOSIO共识速度的算法.md)
 
-BOSCore bases on EOSIO, so you can also referer EOS.IO Technical White Paper:
+### Referendum / WPS Contents
+* [BOS Ecosystem Program(Referendum & WPS)](Referendum_WPS/BOS%20Ecosystem%20Program(Referendum%20%26%20WPS).md)
+* [BOS生态基金方案(含公投&WPS)](Referendum_WPS/BOS%E7%94%9F%E6%80%81%E5%9F%BA%E9%87%91%E6%96%B9%E6%A1%88(%E5%90%AB%E5%85%AC%E6%8A%95%26WPS).md)
 
-- [English](TechnicalWhitePaper.md)
-- [Russian](ru-RU/TechnicalWhitePaper.md) translated by [@blockchained](https://steemit.com/@blockchained)
-- [Chinese](zh-CN/TechnicalWhitePaper.md) translated by [@dayzh](https://steemit.com/@dayzh)
-- [Korean](ko-KR/TechnicalWhitePaper.md) translated by [@clayop](https://steemit.com/@clayop)
+### BOS Oracle
+
+* [BOS Oracle Overview](https://github.com/boscore/bos.contracts/blob/master/contracts/bos.oracle/README.md)
+* [BOS Oracle 概览](https://github.com/boscore/bos.contracts/blob/master/contracts/bos.oracle/README_CN.md)
+* [BOS Oracle Introduction](Oracle/BOS_Oracle_Introduction.md) 
+* [BOS Oracle 入门](Oracle/BOS_Oracle_入门.md)
+* [BOS Oracle Deployment](Oracle/BOS_Oracle_Deployment.md)
+* [BOS Oracle 部署文档](Oracle/BOS_Oracle_部署文档.md)
+* [Code](https://github.com/boscore/bos.contracts/tree/master/contracts/bos.oracle)
+

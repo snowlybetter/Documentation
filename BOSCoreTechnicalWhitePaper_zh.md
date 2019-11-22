@@ -119,17 +119,23 @@ BOS将会提供一种机制，可以针对不同的数字通证发行 1 : 1 的�
 
 BOS 在积极推动多线程方案的同时也在探索更加广阔的扩容方案。抽象的来看运行在区块链上的智能合约其所关联的上下文环境相对独立是大概率事件，因此从全局角度将不同的智能合约划分出来进行并发执行是可行的，于是我们提出了基于隔离计算的扩容方案，重新定义网络中节点角色和块结构，可以通过水平扩展来提高BOS链整体负载能力。
 
-![productverify](https://raw.githubusercontent.com/boscore/Documentation/master/imgs/oralce/productverify.png)  
+
+![productverify](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/productverify.png)  
+
 
 扩展方案中引入“计算区”的概念，每个计算区之间的交易都是并行处理，并且出块和执行是同时进行。BOS主网将会成为“核心计算区”，主要负责账户和通证系统，相关数据更新会同步到各个计算区。
 
-![networktopology](https://raw.githubusercontent.com/boscore/Documentation/master/imgs/scale/networktopology.png) 
+
+![networktopology](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/networktopology.png) 
+
 
 为了适应大量的数据在 P2P 网络中传输，网络节点会分成三种类型：出块节点、数据节点、广播节点。出块节点负责并发执行交易，广播节点提供数据的加速同步，数据节点可以配置针对那些计算区数据进行验证，这将在保证去中心化的前提下实现网络安全验证并保持其抗攻击的特性。
 
 采用多计算区并行方案以后，需要针对块结构进行调整来达到降低数据传输量以及更快共识的目的。新的区块结构将会包含各计算区块的数据，每个计算区的数据都是各自进行计算并达成共识。
 
-![blockstructure](https://raw.githubusercontent.com/boscore/Documentation/master/imgs/scale/blockstructure.png) 
+
+![blockstructure](https://raw.githubusercontent.com/boscore/Documentation/release/1.0.x/imgs/scale/blockstructure.png) 
+
 
 为保证数据可信，BOS 将引入全新的可信查询功能。概括来说，可信的数据查询不仅需要提供目标数据，还需要提供足够的证据来证明数据的可信性。链上数据记录时采用 MVCC 的记录结构，每次改变会使数据记录的版本号加一，同时会保留以前的数据历史。在这种设计模式下，给出一个交易的高度就可以快速查询出该高度对应的全局状态，再结合当前状态生成基于 Merkle Tree 的数据可信证明。 
 
